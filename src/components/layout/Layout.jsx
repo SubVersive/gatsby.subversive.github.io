@@ -1,9 +1,13 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { rhythm, scale } from '../utils/typography'
+import { rhythm, scale } from '../../utils/typography'
 
-class Template extends React.Component {
+import Header from '../header/Header';
+
+// import layoutStyles from "./layout.css"
+
+class Layout extends React.Component {
   render() {
     const { location, children } = this.props
     const rootPath = '/'
@@ -26,7 +30,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            Maksym Kondratiuk Blog
           </Link>
         </h1>
       )
@@ -34,7 +38,7 @@ class Template extends React.Component {
       header = (
         <h3
           style={{
-            fontFamily: 'Montserrat, sans-serif',
+            // fontFamily: 'Montserrat, sans-serif',
             marginTop: 0,
             marginBottom: rhythm(-1),
           }}
@@ -47,7 +51,7 @@ class Template extends React.Component {
             }}
             to={'/'}
           >
-            Gatsby Starter Blog
+            Maksym Kondratiuk Blog
           </Link>
         </h3>
       )
@@ -61,6 +65,7 @@ class Template extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
+        {/* <Header /> */}
         {header}
         {children}
       </div>
@@ -68,4 +73,4 @@ class Template extends React.Component {
   }
 }
 
-export default Template
+export default Layout

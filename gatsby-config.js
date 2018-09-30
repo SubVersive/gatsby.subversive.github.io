@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Starter Blog',
-    author: 'Kyle Mathews',
-    description: 'A starter blog demonstrating what Gatsby can do.',
-    siteUrl: 'https://subversive.github.io/',
+    title: 'Maksym Kondratiuk - personal blog',
+    author: 'Maksym Kondratiuk',
+    description: 'Personal blog of Maksym Kondratiuk.',
+    siteUrl: 'https://maksym.kondratiuk.me/',
   },
   plugins: [
     {
@@ -47,8 +47,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Maksym Kondratiuk Blog`,
+        short_name: `MK`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
